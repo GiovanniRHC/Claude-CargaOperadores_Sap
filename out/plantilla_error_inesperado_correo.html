@@ -1,0 +1,23 @@
+<!-- NOTA: Esto es solo una plantilla, mantén las etiquetas y estilos, ya que es un estándar para enviar correos -->
+<!-- Este correo es para errores INESPERADOS -- cualquier excepción que el código NO anticipó con su propio tipo (ver core/manejo_errores.py, ErrorInesperado). Distinto del error controlado, para diferenciar "algo que ya sabíamos que podía pasar" de "algo genuinamente nuevo" -->
+<P>Estimados,</P>
+<P>El proceso <STRONG>{Descripcion_Proceso}</STRONG> finalizó con incidencias no anticipadas.</P>
+    <TABLE style="PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 12px; BORDER-LEFT: #c62828 6px solid; PADDING-RIGHT: 12px; BACKGROUND-COLOR: #ffebee" width="100%">
+        <TBODY>
+            <TR>
+                <TD><STRONG style="FONT-SIZE: 17px; COLOR: #c62828">[✖] Se detectó un error inesperado.</STRONG>
+                    <UL>
+                        <LI>{Describe el error, por qué falló}</LI>
+                        <LI>Este tipo de error no estaba anticipado por el código -- conviene revisión técnica adicional.</LI>
+                    </UL>
+                </TD>
+            </TR>
+        </TBODY>
+    </TABLE>
+<P><STRONG>Detalle de ejecución</STRONG></P>
+<P>Inicio de ejecución: %ObtenerFechaHoraInicioText%</P>
+<P>Fin de ejecución: %ObtenerFechaHoraFinText%</P>
+<P>Duración: %Duracion% (hh:mm:ss)</P>
+<P style="FONT-SIZE: 15px; COLOR: rgb(107,114,128); FONT-STYLE: italic"><STRONG>Importante:</STRONG> Este mensaje ha sido generado automáticamente por un proceso automatizado y no requiere respuesta.</P>
+<P>Saludos cordiales,</P>
+<P style="FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: rgb(51,51,51); MARGIN: 0px"><STRONG>RPA | {Unidad}</STRONG><BR><STRONG>EMPRESADEMO</STRONG> </P>

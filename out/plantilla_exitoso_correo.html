@@ -1,0 +1,28 @@
+<!-- NOTA: Esto es solo una plantilla, mantén las etiquetas y estilos, ya que es un estándar para enviar correos -->
+<P>Estimados,</P>
+<P>Se realizó el proceso de <STRONG>{Descripcion_Proceso}</STRONG>.</P>
+    <TABLE style="PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 12px; BORDER-LEFT: #2e7d32 6px solid; PADDING-RIGHT: 12px; BACKGROUND-COLOR: #e8f5e9" width="100%">
+        <TBODY>
+            <TR>
+                <TD><STRONG style="FONT-SIZE: 17px; COLOR: #1b5e20">[✔] Proceso ejecutado correctamente.</STRONG>
+                    <UL>
+                        <LI>{Resumen de lo que se procesó}</LI> <!-- Ej: "Se procesaron 12 registros, todos correctamente." -->
+                        <LI>No se identificaron observaciones ni incidencias durante la ejecución del proceso.</LI>
+                    </UL>
+                </TD>
+            </TR>
+        </TBODY>
+    </TABLE>
+<!-- Si tu proceso nuevo necesita mostrar una tabla de detalle (varios
+     registros procesados), agrega aquí una <TABLE> con un único
+     renglón de ejemplo con marcadores {Item1}/{Item2}/... y repítelo
+     en Python por cada fila real -- ver tabla_resultados.py del
+     proyecto SSCO como referencia de ese patrón. -->
+<P><STRONG>Detalle de ejecución</STRONG></P>
+<P>Inicio de ejecución: %ObtenerFechaHoraInicioText%</P>
+<P>Fin de ejecución: %ObtenerFechaHoraFinText%</P>
+<P>Duración: %Duracion% (hh:mm:ss)</P>
+<P>Para mayor detalle, revisar los archivos adjuntos.</P>
+<P style="FONT-SIZE: 15px; COLOR: rgb(107,114,128); FONT-STYLE: italic"><STRONG>Importante:</STRONG> Este mensaje ha sido generado automáticamente por un proceso automatizado y no requiere respuesta.</P>
+<P>Saludos cordiales,</P>
+<P style="FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: rgb(51,51,51); MARGIN: 0px"><STRONG>RPA | {Unidad}</STRONG><BR><STRONG>EMPRESADEMO</STRONG> </P>

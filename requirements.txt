@@ -1,0 +1,10 @@
+openpyxl>=3.1
+pywin32>=306
+pyodbc>=5.0
+pandas>=2.0
+Pillow>=10.0
+requests>=2.31
+# Agregado para este proceso: automatización de los 3 portales web
+# (OperadorB, OperadorC, OperadorA) -- la plantilla base no lo traía,
+# porque solo automatizaba SAP GUI Scripting.
+playwright>=1.40
